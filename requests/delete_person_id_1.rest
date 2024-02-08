@@ -1,0 +1,10 @@
+# Check current list
+GET http://localhost:3001/api/persons
+###
+
+# Actually delete
+DELETE http://localhost:3001/api/persons/1
+###
+
+# Check list again to make sure item was deleted
+GET http://localhost:3001/api/persons
