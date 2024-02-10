@@ -1,0 +1,26 @@
+# Name undefined
+POST https://ashero-full-stack-open-part3.fly.dev/api/persons
+Content-Type: application/json
+
+{
+  "number": "123-456-7890"
+}
+###
+
+# Number undefined
+POST https://ashero-full-stack-open-part3.fly.dev/api/persons
+Content-Type: application/json
+
+{
+  "name": "Jane Doe"
+}
+###
+
+# Duplicate name
+POST https://ashero-full-stack-open-part3.fly.dev/api/persons
+Content-Type: application/json
+
+{
+  "name": "Ada Lovelace",
+  "number": "123-456-7890"
+}

@@ -1,0 +1,10 @@
+# Check current list
+GET https://ashero-full-stack-open-part3.fly.dev/api/persons
+###
+
+# Actually delete
+DELETE https://ashero-full-stack-open-part3.fly.dev/api/persons/1
+###
+
+# Check list again to make sure item was deleted
+GET https://ashero-full-stack-open-part3.fly.dev/api/persons
