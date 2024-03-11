@@ -7,6 +7,16 @@ Content-Type: application/json
 }
 ###
 
+# Name too short
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "jj",
+  "number": "1234567890"
+}
+###
+
 # Number undefined
 POST http://localhost:3001/api/persons
 Content-Type: application/json
@@ -22,5 +32,35 @@ Content-Type: application/json
 
 {
   "name": "Ada Lovelace",
-  "number": "123-456-7890"
+  "number": "123-4567"
+}
+###
+
+# Number invalid (Test 1)
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "number": "1234567"
+}
+###
+
+# Number invalid (Test 2)
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "number": "1-22334455"
+}
+###
+
+# Number invalid (Test 3)
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "number": "10-22-23489523"
 }

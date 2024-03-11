@@ -1,0 +1,8 @@
+# Name too short
+PUT http://localhost:3001/api/persons/65c7c713a0baef72c5da46fc
+Content-Type: application/json
+
+{
+  "name": "jj",
+  "number": "1234567890"
+}
